@@ -1,0 +1,13 @@
+# Created by https://www.toptal.com/developers/gitignore/api/macos,python,react,reactnative
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python,react,reactnative
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
