@@ -6,7 +6,6 @@
 .separator {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
   color: #989898;
   text-shadow: 1px 1px 3px #e0e0e0;
   font-size: 12px;
@@ -19,5 +18,5 @@
   content: '';
   height: 1px;
   background-color: #a0a0a0;
-  margin: 5px;
+  margin: 10px;
 }
