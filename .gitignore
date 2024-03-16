@@ -11,3 +11,25 @@
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+# Environments 
+*.venv/
+venv/
+
+# Jetbrains IDEs
+*.idea
+
+# Distribution / packaging 
+dist/
+
+
+# Visual Studio Code # 
+*.vscode/
+.history
+
+# Django #
+*.log
+*.pot
+*.pyc
+*__pycache__
+*db.sqlite3
