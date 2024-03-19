@@ -15,6 +15,7 @@
 # Environments 
 *.venv/
 venv/
+*.env
 
 # Jetbrains IDEs
 *.idea
