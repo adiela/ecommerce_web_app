@@ -17,7 +17,7 @@ export default function Login() {
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get('email'),
-      password: data.get('password'),
+      password: data.get('new-password'),
     });
   };
 
@@ -32,14 +32,14 @@ export default function Login() {
           }}
         >
           <Typography component="h1" variant="h5">
-            Login to your account
+            Create an account
           </Typography>
           <Button
             variant="outlined"
             fullWidth
             sx={{ mt: 5 }}
           >
-            Login with phone number
+            Signup with phone number
           </Button>
           <p class={styles.separator}>or</p>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 5 }}>
@@ -58,7 +58,15 @@ export default function Login() {
               name="password"
               label="Password"
               type="password"
-              autoComplete="current-password"
+              autoComplete="new-password"
+            />
+            <TextField
+              required
+              id="confirm-password"
+              name="confirm-password"
+              label="Confirm Password"
+              type="password"
+              autoComplete="confirm-password"
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -69,20 +77,11 @@ export default function Login() {
               fullWidth
               sx={{ mb: 3 }}
             >
-              Login
+              Signup
             </Button>
-            <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="/signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
+            <Link href="/login" variant="body2" className="MuiTypography-alignCenter">
+              {"Already have an account? Login"}
+            </Link>
           </Box>
         </Box>
     </ImageSideBarLayout>   
