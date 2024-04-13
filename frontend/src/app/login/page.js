@@ -51,6 +51,7 @@ export default function Login() {
               type="email"
               autoComplete="email"
               autoFocus
+              fullWidth
             />
             <TextField
               required
@@ -59,6 +60,7 @@ export default function Login() {
               label="Password"
               type="password"
               autoComplete="current-password"
+              fullWidth
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
